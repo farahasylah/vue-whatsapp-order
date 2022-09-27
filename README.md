@@ -1,4 +1,4 @@
-# Create Whatsapp Order
+# Create WhatsApp Order message with formatting based on user selections
 - Tailwind CSS
 
 ![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/initial.png?raw=true)
