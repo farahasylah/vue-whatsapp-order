@@ -1,24 +1,8 @@
-# vue-whatsapp-order
+# Create Whatsapp Order
+- Tailwind CSS
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/initial.png?raw=true)
+![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/2.png?raw=true)
+![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/3.png?raw=true)
+![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/4.png?raw=true)
+![alt text](https://github.com/farahasylah/vue-whatsapp-order/blob/master/screenshots/end.jpg?raw=true)

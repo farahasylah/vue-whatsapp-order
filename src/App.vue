@@ -341,7 +341,7 @@ export default {
       return parseFloat(total).toFixed(2);
     },
     orderWhatsapp(){
-      let phone = '+60177160734';
+      let phone = '+60123456789';
       let customer = this.customer[0];
       let string = '';
       let items = 'NEXT';
