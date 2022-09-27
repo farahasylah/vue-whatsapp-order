@@ -1,0 +1,69 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Montserrat:ital,wght@1,800&display=swap');
+
+html{overflow: hidden;font-family: 'Lato'; color: #2c3e50;}
+table th,table td{
+    padding: 0.5em 1em;
+}
+.cart > *{
+    float: right;
+}
+.detailpg input{
+    text-align: left;
+}
+.scroll-container {
+    height: calc(100vh - 45px - 145px);
+}
+
+svg{
+    display: inline-block;
+}
+.detailpg label{
+    white-space: nowrap;
+}
+
+@media (min-width: 768px){
+    .scroll-container {
+        height: calc(100vh - 45px);
+    }
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.cart-table table, .cart-table thead, .cart-table tbody, .cart-table th, .cart-table td, .cart-table tr { 
+		display: block; 
+	}
+	
+	.cart-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.cart-table tr { margin-bottom:10px}
+	
+	.cart-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	}
+	
+	.cart-table td:before { 
+		position: absolute;
+		top: 25%;
+		left: 5%;
+		width: 20%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        text-align:left;
+	}
+	.cart-table td:nth-of-type(1):before { content: ""; }
+	.cart-table td:nth-of-type(2):before { content: "Price"; }
+	.cart-table td:nth-of-type(3):before { content: "Quantity"; }
+	.cart-table td:nth-of-type(4):before { content: "Subtotal"; }
+	.cart-table td:nth-of-type(5):before { content: "Remove"; }
+}
