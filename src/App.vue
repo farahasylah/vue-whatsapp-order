@@ -110,9 +110,9 @@
         </div>
         <div class="inline-flex md:w-1/2 w-full">
           <div v-if="customer[0].orderMode === 'delivery'" class="pl-2 inline-flex mt-2 md:mt-0">
-
-er-2" 
-              placeholder="Add in your delivery location"/>
+            <label>Address: </label>
+            <textarea v-model="customer[0].address" row="3" cols="50" 
+            class="ml-1.5 py-1 px-4 text-sm border-2 w-full" placeholder="Add in your delivery location"/>
           </div>
           <div v-if="customer[0].orderMode === 'pickup'" class="pl-4">
             <strong>
