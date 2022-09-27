@@ -1,10 +1,10 @@
 <template>
   <div class="md:flex md:pb-4">
-    <div class="navigation md:w-1/5 w-full bg-violet-100 p-2 shadow-lg z-10">
+    <div class="navigation md:w-1/5 w-full bg-violet-100 p-1 md:p-2 shadow-lg z-10">
       <div class="fixed md:h-screen relative md:pt-3 p-1 md:p-4 flex justify-around md:block md:mt-5 text-left md:text-center">
           <img src="./assets/logo.jpg" class="inline-block rounded-full shadow-xl w-24 h-24 md:w-full md:h-auto max-w-fit" >
           <div class="p-3 md:p-1">
-            <h1 class="text-md md:text-xl font-bold md:mt-3">
+            <h1 class="text-lg md:text-xl font-bold md:mt-3">
               WeBake Store</h1>
             <h2 class="text-sm leading-4 italic mt-2 mb-4 font-medium">
               We bake things like cupcakes, cookies and custom made cakes</h2>
@@ -18,7 +18,7 @@
       </div>
       
     </div>
-    <div class="scroll-container p-5 md:p-8 mb-4 md:w-4/5 w-full overflow-auto">
+    <div class="scroll-container p-5 md:p-8 md:w-4/5 w-full overflow-auto">
       <div v-if="currentPg === 'products'" >
         <div v-for="( item, index ) in products" :key="index" 
           class="inline-block md:flex md:flex-row bg-violet-100 border-2 border-violet-100 rounded-md drop-shadow-md text-left p-3 md:p-4 mb-3.5 w-full"
@@ -26,9 +26,9 @@
           <img :src="item.img" 
             class="inline-block md:w-10 aspect-square w-2/6 float-left md:basis-1/6 object-cover rounded-lg" >
           <div class="inline-block pl-4 md:px-5 md:py-1 w-4/6 md:basis-4/6">
-            <h5 class="text-lg font-bold leading-5 pb-1">
+            <h5 class="text-md md:text-lg font-bold leading-5 pb-1">
               {{ item.name }}</h5>
-            <p class="font-medium">
+            <p class="text-md font-medium">
               RM {{ item.price }}</p>
             <p v-html="item.desc" class="text-sm mt-1" ></p>
           </div>
@@ -94,7 +94,7 @@
           Clear cart
         </button>
       </div>
-      <div v-if="currentPg === 'details'" class="detailpg mb-3 p-5 text-left">
+      <div v-if="currentPg === 'details'" class="detailpg mb-3 md:p-5 text-left">
         <p class="italic mb-4 text-sm">
             <IconsSVG icon="info"/> Store operating hours : 8:00 am - 8:00 pm</p>
         <h5 class="text-lg font-bold mb-2 underline">
@@ -109,10 +109,9 @@
           </select>
         </div>
         <div class="inline-flex md:w-1/2 w-full">
-          <div v-if="customer[0].orderMode === 'delivery'" class="pl-2 inline-flex">
-            <label clas="w-1/5">Address : </label>
-            <textarea v-model="customer[0].address" name="location" type="textarea" rows="3" cols="50" 
-              class="ml-1.5 py-1 px-4 rounded-sm w-full text-sm border-2" 
+          <div v-if="customer[0].orderMode === 'delivery'" class="pl-2 inline-flex mt-2 md:mt-0">
+
+er-2" 
               placeholder="Add in your delivery location"/>
           </div>
           <div v-if="customer[0].orderMode === 'pickup'" class="pl-4">

@@ -1,5 +1,5 @@
 <template>
-  <button target="_blank" @click="goToLink()" class="bg-violet-500 p-1 md:p-2 text-white inline-flex items-center rounded m-1">
+  <button target="_blank" @click="goToLink()" class="bg-violet-500 m-0.5 md:m-1 px-1 py-0 md:p-2 text-white inline-flex items-center justify-center rounded">
     <IconsSVG :icon="icon"/>
   </button>
 </template>
